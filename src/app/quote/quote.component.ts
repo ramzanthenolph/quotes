@@ -13,6 +13,10 @@ export class QuoteComponent implements OnInit {
     new Quote('Life is what happens when you are busy making other plans', 'John Lennon', 'Founder'),
     new Quote('Love the life you live. Live the life you love', 'Bob Marley', 'Founder'),
   ];
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  
   constructor() { }
 
   ngOnInit(): void {
