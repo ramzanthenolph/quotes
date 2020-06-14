@@ -13,6 +13,12 @@ export class QuoteComponent implements OnInit {
     new Quote('Life is what happens when you are busy making other plans', 'John Lennon', 'Founder'),
     new Quote('Love the life you live. Live the life you love', 'Bob Marley', 'Founder'),
   ];
+  addNewQuote(quote){
+    //let quoteLength = this.quotes.length;
+    //goal.id = goalLength+1;
+    //quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
