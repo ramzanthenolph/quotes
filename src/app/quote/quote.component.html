@@ -8,7 +8,7 @@
             <div>
             <p class="lead">{{quote.name}}</p>
             <hr class="my-4">
-            <p>On: {{ date_value | date :'short'}}</p>
+            <p>On: {{ quote.uploadDate | date :'short'}}</p>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Show Details</button>
             </div>
 
