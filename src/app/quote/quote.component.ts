@@ -8,14 +8,14 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[]=[
-    new Quote('The greatest glory in living lies not in never falling, but in rising everytime we fall', 'Nelson Mandela', 'Founder'),
-    new Quote('The way to get started is to quit talking and begin doing', 'Walt Disney','Founder'),
-    new Quote('Life is what happens when you are busy making other plans', 'John Lennon', 'Founder'),
-    new Quote('Love the life you live. Live the life you love', 'Bob Marley', 'Founder'),
+    new Quote(1,'The greatest glory in living lies not in never falling, but in rising everytime we fall', 'Nelson Mandela', 'Founder'),
+    new Quote(2,'The way to get started is to quit talking and begin doing', 'Walt Disney','Founder'),
+    new Quote(3,'Life is what happens when you are busy making other plans', 'John Lennon', 'Founder'),
+    new Quote(4,'Love the life you live. Live the life you love', 'Bob Marley', 'Founder'),
   ];
   addNewQuote(quote){
-    //let quoteLength = this.quotes.length;
-    //goal.id = goalLength+1;
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
     //quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
