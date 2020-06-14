@@ -18,7 +18,7 @@
         </div>
         <div class="form-group">
             <label for="submitBy">Your Name</label>
-            <input type="text" class="form-control" required id="submitBy">
+            <input type="text" class="form-control" required id="submitBy" [(ngModel)] = "newQuote.submitBy" name="submitBy" #submitBy='ngModel'>
         </div>
         <button type="submit" class="btn btn-success">Post Quote</button>
     </form>
