@@ -1,11 +1,16 @@
-<div>
+<div class="container">
     <h1>Best Quotes</h1>
     <hr>
-    <ul>
+    <div  class="row">
+        <div class="col-md-6">
         <div *ngFor='let quote of quotes; let i=index'>
-        <li>{{quote.name}}</li>
-        <button (click)='toggleDetails(i)'>Show Details</button>
-        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteGoal($event,i)'></app-quote-detail>
+            <div>
+            <p>{{quote.name}}</p>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Show Details</button>
+            </div>
+
+            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteGoal($event,i)'></app-quote-detail>
         </div>
-    </ul>
+        </div>
+    </div>
   </div>
