@@ -4,10 +4,11 @@
     <hr>
     <div  class="row">
         <div class="col-md-6">
-        <div *ngFor='let quote of quotes; let i=index' class="jumbotron jumbotron-fluid">
+        <div *ngFor='let quote of quotes; let i=index' class="jumbotron">
             <div>
             <p class="lead">{{quote.name}}</p>
             <hr class="my-4">
+            <p>On: {{ date_value | date :'short'}}</p>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Show Details</button>
             </div>
 

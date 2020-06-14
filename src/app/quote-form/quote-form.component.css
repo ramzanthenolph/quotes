@@ -1,0 +1,15 @@
+.form-control{
+    color: white;
+    background: transparent;
+    font-weight: 570;
+  }
+  label{
+    color: white;
+    font-weight: 600;
+  }
+  hr{
+    width: 65%;
+    height: 1px;
+    background-color: green;
+  }
+  

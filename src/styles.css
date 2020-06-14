@@ -11,4 +11,6 @@ body{
 }
 .jumbotron{
     color: black;
+    padding-bottom: 5%;
+    padding-top: 2%;
 }
