@@ -1,9 +1,10 @@
 <div class="container">
     <h1>Best Quotes</h1>
+    <p>Welcome to quotes, a place where you can express quotes or just read them to feel uplifted by them</p>
     <hr>
     <div  class="row">
         <div class="col-md-6">
-        <div *ngFor='let quote of quotes; let i=index'>
+        <div *ngFor='let quote of quotes; let i=index' class="jumbotron">
             <div>
             <p>{{quote.name}}</p>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Show Details</button>
